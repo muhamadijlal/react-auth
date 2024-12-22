@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        outline: none;
+    }
+
+    .color-gradient {
+        @apply bg-gradient-to-r from-sky-500 to-indigo-500;
+    }
+
+    .text-gradient {
+        @apply color-gradient inline-block text-transparent bg-clip-text;
+    }
+}
